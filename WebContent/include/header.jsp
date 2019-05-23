@@ -61,7 +61,7 @@
 <center>
 	<img src="/HelloWorld/images/casino2.jpg"
 		alt="My idol" width="1900" height="400">
-	<h1 id = "setSize">Welcome to Casino SAGAME66</h1>
+	<h1 id = "setSize">Welcome to Casino SAGAME66 T.T</h1>
 	<hr>
 </center>
 <ul>
