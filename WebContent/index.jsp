@@ -39,13 +39,10 @@
 <meta charset="ISO-8859-1">
 <title >Welcome to MyWebSite Jokkie</title>
 </head>
-<center>
-		<jsp:include page="include/header.jsp"/>
-		<hr>
-</center>
 <body>
-	</center>
-	<h1 class="MediumSeaGreen">Home TEST</h1>
+	<jsp:include page="include/header.jsp"/>
+	<hr>
+	<h1 class="MediumSeaGreen" style ="color:white";>Home</h1>
 	<p>You can support me by register SAGAME 66 1000 baht :</p>
 	<center>
 		<iframe src="https://cdn.sagame66.com/video.mp4" height="480"
@@ -56,14 +53,12 @@
 	<br>
 	<section>
 		<nav>
-
 			<p>- BACARAT</p>
 			<br>
 			<p>- POK POK</p>
 			<br>
 			<p>- BLACKJACK</p>
 			<br>
-
 		</nav>
 		<article>
 			<h1>The beginning of the word "Casino"</h1>

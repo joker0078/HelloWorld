@@ -8,6 +8,9 @@
 		font-family: verdana;
 		background-color: Tomato;
 	}
+	.white{
+		background-color: white;
+	}
 	.MediumSeaGreen {
 		font-family: verdana;
 		background-color: MediumSeaGreen;
@@ -28,7 +31,6 @@
 	} 
 	#setSize{
 		font-family: verdana;
-		color: white;
 	}
 	#setVerdana{
 		font-family: verdana;
@@ -58,14 +60,15 @@
   		color: #ff0000;
 	}
 </style>
-<center>
 	<img src="/HelloWorld/images/casino2.jpg"
 		alt="My idol" width="1900" height="400">
-	<h1 id = "setSize">Welcome to Casino SAGAME66 T.T</h1>
+	<center>
+		<h1 id = "setSize" style ="color:white";>Welcome to Casino SAGAME66.COM</h1>
+	</center>
 	<hr>
-</center>
 <ul>
   <li><a href="index.jsp">Home</a></li>
   <li><a href="Login.jsp">Login</a></li>
   <li><a href="About.jsp">About</a></li>
+  <li><a href="Register.jsp">Register</a></li>
 </ul>

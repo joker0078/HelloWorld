@@ -15,21 +15,20 @@ form {
 }
 </style>
 <meta charset="ISO-8859-1">
-<title>Login TEST</title>
+<title>Login</title>
 </head>
 <body>
-<center>
+
 	<jsp:include page="include/header.jsp"/>
 	<hr>
-</center>
-	<h1 class="MediumSeaGreen">Login</h1>
+
+	<h1 class="MediumSeaGreen" style = "color:white";>Login</h1>
 	<center>
-		<form id="setSize">
-			Username : <input type="text" name=""><br>
-			<br> Password : <input type="password" name=""><br>
-			<br>
-			<input id="setVerdana" type="reset" value="Reset"> <input
-				id="setVerdana" type="submit" value="OK">
+		<form id="setSize" class = "white">
+			Username :<input type="text" name=""><br><br>
+			Password : <input type="password" name=""><br><br>
+			<input id="setVerdana" type="reset" value="Reset"> 
+			<input id="setVerdana" type="submit" value="OK">
 		</form>
 	</center>
 </body>

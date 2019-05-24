@@ -5,15 +5,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>About Us TEST</title>
+<title>About Us</title>
 </head>
 <body>
 		
-<center>
+
 	<jsp:include page="include/header.jsp"/>
 	<hr>
-</center>
-	<h1 class = "MediumSeaGreen">About Us</h1>
+
+	<h1 class = "MediumSeaGreen" style = "color:white";>About Us</h1>
 	<table style="width: 100%" border = "2">
 		<tr>
 			<th colspan = "5">Firstname,Lastname,Age,Birthday,Phone Number</th>
