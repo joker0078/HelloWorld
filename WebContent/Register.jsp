@@ -22,18 +22,18 @@
 <body>
 		<jsp:include page="include/header.jsp"/>
 		<hr>
-		<h1 class="MediumSeaGreen" style = "color:white";>Register</h1>
-		<form id = "setSize" class = "white" action="/action_page.php">
+		<h1 class="MediumSeaGreen" style = "color:white">Register</h1>
+		<form id = "setSize" class = "white" action="${pageContext.request.contextPath}/Register1" method="post">
   			First name :<br>
-  			<input type="text" name="firstname" value=""><br>
+  			<input type="text" name="name" required="required"><br>
   			Last name :<br>
-  			<input type="text" name="lastname" value=""><br>
+  			<input type="text" name="lastname" required="required"><br>
   			Email :<br>
-  			<input type="text" name="email" value=""><br>
+  			<input type="text" name="email" required="required"><br>
   			Username :<br>
-  			<input type="text" name="username" value=""><br>
+  			<input type="text" name="username" required="required"><br>
   			Password :<br>
-  			<input type="password" name="password" value=""><br>
+  			<input type="password" name="password" required="required"><br>
   			<br>
   			<input type="reset" value="Reset"> | 
   			<input type="submit" value="OK">

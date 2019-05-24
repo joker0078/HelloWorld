@@ -44,6 +44,8 @@
 	}
 	li {
   		float: left;
+  		font-family: verdana;
+  		font-size: 120%;
 	}
 
 	li a {
@@ -57,13 +59,14 @@
 
 	li a:hover {
   		background-color: #ff8566;
+  		font-family: verdana;
   		color: #ff0000;
 	}
 </style>
 	<img src="/HelloWorld/images/casino2.jpg"
 		alt="My idol" width="1900" height="400">
 	<center>
-		<h1 id = "setSize" style ="color:white";>Welcome to Casino SAGAME66.COM</h1>
+		<h1 id = "setSize" style ="color:white">Welcome to Casino SAGAME66.COM</h1>
 	</center>
 	<hr>
 <ul>

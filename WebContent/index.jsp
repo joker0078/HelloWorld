@@ -42,7 +42,7 @@
 <body>
 	<jsp:include page="include/header.jsp"/>
 	<hr>
-	<h1 class="MediumSeaGreen" style ="color:white";>Home</h1>
+	<h1 class="MediumSeaGreen" style ="color:white">Home</h1>
 	<p>You can support me by register SAGAME 66 1000 baht :</p>
 	<center>
 		<iframe src="https://cdn.sagame66.com/video.mp4" height="480"

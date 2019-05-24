@@ -22,7 +22,7 @@ form {
 	<jsp:include page="include/header.jsp"/>
 	<hr>
 
-	<h1 class="MediumSeaGreen" style = "color:white";>Login</h1>
+	<h1 class="MediumSeaGreen" style = "color:white">Login</h1>
 	<center>
 		<form id="setSize" class = "white">
 			Username :<input type="text" name=""><br><br>
