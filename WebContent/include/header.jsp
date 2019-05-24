@@ -1,15 +1,43 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <style>
+	img {
+ 	 	border-radius: 5%;
+	}
+	* {box-sizing: border-box;}
 	body{
+		margin: 0;
+  		font-family: Arial, Helvetica, sans-serif;
 		background-color: #000000;
 	}
-	.orange {
-		font-family: verdana;
-		background-color: Tomato;
+	.header {
+  		overflow: hidden;
+  		background-color: Tomato;
+  		padding: 10px 10px;
 	}
-	.white{
-		background-color: white;
+	
+	.header a {
+  		float: left;
+  		color: black;
+  		text-align: center;
+  		padding: 12px;
+  		text-decoration: none;
+  		font-size: 18px; 
+  		line-height: 25px;
+  		border-radius: 4px;
+  		font-family: verdana;
+	}
+
+	.header a.logo {
+ 		font-size: 25px;
+  		font-weight: bold;
+	}
+	.header a:hover {
+  		background-color: #ff3300;
+  		color: black;
+	}
+	.header-right {
+  		float: right;
 	}
 	.MediumSeaGreen {
 		font-family: verdana;
@@ -35,43 +63,37 @@
 	#setVerdana{
 		font-family: verdana;
 	}
-	ul {
-  		list-style-type: none;
-  		margin: 0;
-  		padding: 0;
-  		overflow: hidden;
-  		background-color: Tomato;
-	}
-	li {
-  		float: left;
-  		font-family: verdana;
-  		font-size: 120%;
-	}
-
-	li a {
-  		display: block;
-  		color: white;
-  		text-align: center;
-  		font-family: verdana;
-  		text-decoration: none;
-  		padding: 15px;
-	}
-
-	li a:hover {
-  		background-color: #ff8566;
-  		font-family: verdana;
-  		color: #ff0000;
-	}
 </style>
+<center>
 	<img src="/HelloWorld/images/casino2.jpg"
-		alt="My idol" width="1900" height="400">
-	<center>
-		<h1 id = "setSize" style ="color:white">Welcome to Casino SAGAME66.COM</h1>
-	</center>
-	<hr>
-<ul>
-  <li><a href="index.jsp">Home</a></li>
-  <li><a href="Login.jsp">Login</a></li>
-  <li><a href="About.jsp">About</a></li>
-  <li><a href="Register.jsp">Register</a></li>
-</ul>
+		alt="My idol" width=1330 height=300>
+</center>
+<hr>
+<% 
+if(session.getAttribute("user") != null){
+%>
+	<div class="header">
+  		<a href="#default" class="logo">Welcome to Casino SAGAME66.COM</a>
+  		<div class="header-right">
+    		<a href="index.jsp">Home</a>
+	  		<a href="Profile.jsp">Profile</a>
+	  		<a href="Logout1">Logout</a>
+	  		<a href="About.jsp">About</a>
+  		</div>
+	</div>
+<%
+}
+else{
+%>	
+	<div class="header">
+  		<a href="#default" class="logo">Welcome to Casino SAGAME66.COM</a>
+  		<div class="header-right">
+    		<a href="index.jsp">Home</a>
+	  		<a href="Login.jsp">Login</a>
+	  		<a href="About.jsp">About</a>
+	  		<a href="Register.jsp">Register</a>
+  		</div>
+	</div>
+<%
+}
+%>

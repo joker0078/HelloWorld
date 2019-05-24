@@ -8,43 +8,31 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.model.UserModel;
 
 /**
- * Servlet implementation class Register1
+ * Servlet implementation class Logout1
  */
-@WebServlet("/Register1")
-public class Register1 extends HttpServlet {
+@WebServlet("/Logout1")
+public class Logout1 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    static String id;
-    static String pass;
 	protected void processRequest(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+		HttpSession session = request.getSession(true);
 		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		String name = request.getParameter("name");
-		String lastname = request.getParameter("lastname");
-		String email = request.getParameter("email");
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		System.out.println(request.getParameter("name"));
-		System.out.println(request.getParameter("lastname"));
-		System.out.println(request.getParameter("email"));
-		System.out.println(request.getParameter("username"));
-		System.out.println(request.getParameter("password"));
-		if (email.contains("@")) {
-			id = username;
-			pass = password;
-			out.println("<meta http-equiv='refresh' content='0;URL=Login.jsp'>");
-			out.println("<p>Register Successful</p>");
+		if (session.getAttribute("user") != null) {
+			session.setAttribute("user", null);
+			response.sendRedirect(request.getContextPath() + "/Login.jsp");
 		}
 		else {
-			out.println("<meta http-equiv='refresh' content='0;URL=Login.jsp'>");
-			out.println("Register Error email");
+			response.sendRedirect(request.getContextPath() + "/Login.jsp"); 
 		}
 	}
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Register1() {
+    public Logout1() {
         super();
         // TODO Auto-generated constructor stub
     }
