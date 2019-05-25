@@ -5,70 +5,81 @@
 <html>
 <head>
 <style>
-.container {
-	width: 300px;
-	border-style: solid;
-	border-width: 5px;
-	display: block;
-	padding: 10px;
-	border-color: MediumSeaGreen;
-	background-color: white;
-	margin: 0 auto;
-}
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=password], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+	.container {
+		width: 300px;
+		border-style: solid;
+		border-width: 5px;
+		display: block;
+		padding: 10px;
+		border-color: MediumSeaGreen;
+		background-color: white;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+	input[type=text], select {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
+	input[type=password], select {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	input[type=submit] {
+		width: 70%;
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px;
+		display: block;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
 
-input[type=reset] {
-  width: 100%;
-  background-color: red;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+	input[type=submit]:hover {
+		background-color: #45a049;
+	}
 
-input[type=reset]:hover {
-  background-color: #ff3333;
-}
+	input[type=reset] {
+		width: 70%;
+		background-color: red;
+		color: white;
+		padding: 14px;
+		display: block;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
 
-div.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
+	input[type=reset]:hover {
+		background-color: #ff3333;
+	}
+
+	div.container {
+		border-radius: 5px;
+		background-color: #f2f2f2;
+	}
 </style>
 <meta charset="ISO-8859-1">
 <title>Login</title>
@@ -76,24 +87,43 @@ div.container {
 <body>
 
 	<jsp:include page="include/header.jsp" />
-	<hr class ="new5">
-	<h1 class="MediumSeaGreen" style="padding: 12px">Login</h1>
+	<hr class="new5">
+	<h1 class="MediumSeaGreen">Login</h1>
+	<script type="text/javascript">
+		function checkLogin() {
+			var id = document.getElementById("id");
+			var pass = document.getElementById("pass");
+			
+			if (id.value=="") {
+				alert("Please Enter Your Username ! ! !");
+				id.focus();
+				return false;
+			}
+			else if (pass.value=="") {
+				alert("Please Enter Your Password ! ! !");
+				pass.focus();
+				return false;
+			}
+			return true;
+		}
+	</script>
+	<div class="alert alert-success" role="alert"></div>
+	<div class="container">
+		<form onsubmit="return checkLogin()"action="${pageContext.request.contextPath}/Login1" method="post">
+			<center>
+				<img src="/HelloWorld/images/login.png" width="150" height="150">
+			</center>
+			<label for="fname" style="font-family: verdana;">Username</label> 
+			<input type="text" id="id" name="usern" placeholder="Your Username. . ."> 
+			
+			<label for="lname" style="font-family: verdana;">Password</label> 
+			<input type="password" id="pass" name="passw" placeholder="Your Password. . ."> 
+			
+			<input id="setVerdana" type="reset"value="Reset"> 
+			<input id="setVerdana" type="submit"value="OK">
+		</form>
+	</div>
 
-<div class="container">
-  <form action="${pageContext.request.contextPath}/Login1" method="post">
-  	<center>
-			<img src="/HelloWorld/images/login.png" width="150" height="150">
-	</center>
-    <label for="fname" style = "font-family: verdana;">Username</label>
-    <input type="text" name="usern" placeholder="Your Username.." required="required">
-
-    <label for="lname" style = "font-family: verdana;">Password</label>
-    <input type="password" name="passw" placeholder="Your Password.." required="required">
-    <input id="setVerdana" type="reset" value="Reset">
-	<input id="setVerdana" type="submit" value="OK">
-  </form>
-</div>
-	
 </body>
 </html>
 </html>

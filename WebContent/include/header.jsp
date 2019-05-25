@@ -2,18 +2,20 @@
     pageEncoding="ISO-8859-1"%>
 <style>
 	img {
- 	 	border-radius: 5%;
+ 	 	border-radius: 5px;
+ 	 	max-width: 100%;
+  		height: auto;
 	}
 	* {box-sizing: border-box;}
 	body{
 		margin: 0;
   		font-family: Arial, Helvetica, sans-serif;
-		background-color: #000000;
+		background-color: #333333;
 	}
 	.header {
   		overflow: hidden;
-  		background-color: Tomato;
-  		padding: 10px 10px;
+  		background-image: linear-gradient(90deg, green, orange,yellow);
+  		margin : 0px;
   		border-radius: 5px;
 	}
 	
@@ -32,6 +34,7 @@
 	.header a.logo {
  		font-size: 25px;
   		font-weight: bold;
+  		text-shadow: 0 0 10px #00cc00,0 0 10px #00cc00;
 	}
 	.header a:hover {
   		background-color: #ff3300;
@@ -42,23 +45,13 @@
 	}
 	.MediumSeaGreen {
 		font-family: verdana;
-		background-color: MediumSeaGreen;
+		background-image: linear-gradient(90deg, yellow, orange, green);
 		border-radius: 5px;
+		padding: 8px;
+		margin-top: 0px;
+		margin-bottom: 10px;
+		text-shadow: 0 0 10px #00cc00,0 0 10px #00cc00;
 	}
-	td {
- 		background-color: lightblue;
- 		font-family: verdana;
-  		color: black;
-  		padding: 14px;
-  		text-align: center;
-	} 
-	th {
- 		background-color: lightblue;
- 		font-family: verdana;
-  		color: black;
-  		padding: 14px;
-  		text-align: center;
-	} 
 	#setSize{
 		font-family: verdana;
 	}
@@ -66,14 +59,31 @@
 		font-family: verdana;
 	}
 	hr.new5 {
-  		border: 5px solid white;
+  		border: 3px solid white;
+  		border-radius: 5px;
+	}
+	.setCon {
+  		position: relative;
+	}
+	.text-block {
+ 		position: absolute;
+  		top: 50px;
+  		left: 40px;
+  		background-color: black;
+  		color: white;
+  		padding-left: 15px;
+  		padding-right: 15px;
+  		border: 3px solid #33cc33;
   		border-radius: 5px;
 	}
 </style>
-<center>
-	<img src="/HelloWorld/images/casino2.jpg"
-		alt="My idol" width=1330 height=300>
-</center>
+<div class="setCon">
+  <img src="${pageContext.request.contextPath}/images/casino2.jpg">
+  <div class="text-block"> 
+    <h1>SAGAME66.COM</h1>
+    <p>What is BET?</p>
+  </div>
+</div>
 <hr class ="new5">
 <% 
 if(session.getAttribute("user") != null){
@@ -85,6 +95,7 @@ if(session.getAttribute("user") != null){
 	  		<a href="Profile.jsp">Profile</a>
 	  		<a href="Logout1">Logout</a>
 	  		<a href="About.jsp">About</a>
+	  		<a href="Calculate.jsp">Calculate</a>
   		</div>
 	</div>
 <%
@@ -98,6 +109,7 @@ else{
 	  		<a href="Login.jsp">Login</a>
 	  		<a href="About.jsp">About</a>
 	  		<a href="Register.jsp">Register</a>
+	  		<a href="Calculate.jsp">Calculate</a>
   		</div>
 	</div>
 <%

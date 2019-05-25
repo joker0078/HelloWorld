@@ -12,8 +12,10 @@
 	display: block;
 	padding: 10px;
 	border-color: MediumSeaGreen;
-	background-color: white;
-	margin: 0 auto;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
 }
 
 input[type=text], select {
@@ -71,6 +73,19 @@ div.container {
 	background-color: #f2f2f2;
 	padding: 20px;
 }
+.setP{
+	color: red;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #ffffff;
+	border: 3px solid #ff0000;
+	font-family: verdana;
+	width : 280px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
 </style>
 <meta charset="ISO-8859-1">
 <title>Register</title>
@@ -78,26 +93,83 @@ div.container {
 <body>
 	<jsp:include page="include/header.jsp" />
 	<hr class ="new5">
-	<h1 class="MediumSeaGreen" style="padding: 12px">Register</h1>
-
+	<h1 class="MediumSeaGreen">Register</h1>
+	<script type="text/javascript">
+		function checkinput() {
+			
+			if (name1.value=="") {
+				document.getElementById("errerms").style.display = "";
+				document.getElementById("errerms").innerHTML = "Please Enter Your Firstname ! ! !";
+				//alert("Please Enter Your Firstname ! ! !");
+				name1.focus();
+				return false;
+			}
+			else if (lastname.value=="") {
+				document.getElementById("errerms").style.display = "";
+				document.getElementById("errerms").innerHTML = "Please Enter Your Lastname ! ! !";
+				lastname.focus();
+				return false;
+			}
+			else if (email.value=="") {
+				document.getElementById("errerms").style.display = "";
+				document.getElementById("errerms").innerHTML = "Please Enter Your Email ! ! !";
+				email.focus();
+				return false;
+			}
+			else if (username.value=="") {
+				document.getElementById("errerms").style.display = "";
+				document.getElementById("errerms").innerHTML = "Please Enter Your Username ! ! !";
+				username.focus();
+				return false;
+			}
+			else if (password.value=="") {
+				document.getElementById("errerms").style.display = "";
+				document.getElementById("errerms").innerHTML = "Please Enter Your Password! ! !";
+				password.focus();
+				return false;
+			}
+			else if (Cpassword.value=="") {
+				document.getElementById("errerms").style.display = "";
+				document.getElementById("errerms").innerHTML = "Please Enter Your Confirm Password ! ! !";
+				Cpassword.focus();
+				return false;
+			}
+			else if (Cpassword.value!=password.value) {
+				document.getElementById("errerms").style.display = "";
+				document.getElementById("errerms").innerHTML = "Your password is not Correct ! ! !";
+				password.focus();
+				return false;
+			}
+			document.getElementById("errerms").style.dispaly = "none";
+			return true;
+		}
+	</script>
 	<div class="container">
-		<form action="${pageContext.request.contextPath}/Register1"
+		<form onsubmit="return checkinput()" action="${pageContext.request.contextPath}/Register1"
 			method="post">
-			<label for="fname" style="font-family: verdana;">Firstname</label> <input
-				type="text" name="name" value="surasit" required="required">
+			<label for="fname" style="font-family: verdana;">Firstname</label> 
+			<input type="text" id="name1" name="name" placeholder="Your Firstname. . .">
 
-			<label for="lname" style="font-family: verdana;">Lastname</label> <input
-				type="text" name="lastname" value="suwannara" required="required">
+			<label for="lname" style="font-family: verdana;">Lastname</label> 
+			<input type="text" id="lastname" name="lastname" placeholder="Your Lastname. . .">
 
-			<label for="ename" style="font-family: verdana;">Email</label> <input
-				type="text" name="email" value="joker12345@gmail.com"
-				required="required"> <label for="uname"
-				style="font-family: verdana;">Username</label> <input type="text"
-				name="username" value="joker0078" required="required"> <label
-				for="pname" style="font-family: verdana;">Password</label> <input
-				type="password" name="password" required="required"> <input
-				id="setVerdana" type="reset" value="Reset"> <input
-				id="setVerdana" type="submit" value="OK">
+			<label for="ename" style="font-family: verdana;">Email</label> 
+			<input type="text" id="email" name="email" placeholder="Your Email. . ."> 
+			
+			<label for="uname" style="font-family: verdana;">Username</label> 
+			<input type="text" id="username" name="username" placeholder="Your Username. . ."> 
+			
+			<label for="pname" style="font-family: verdana;">Password</label> 
+			<input type="password" id="password" name="password" placeholder="Your Password. . ."> 
+			
+			<label for="pname" style="font-family: verdana;">Confirm Password</label> 
+			<input type="password" id="Cpassword" name="Cpassword" placeholder="Confirm Password. . ."> 
+			
+			<p class = "setP" id = "errerms" style = "display:none">asdasd</p>
+			
+			<input id="setVerdana" type="reset" value="Reset"> 
+			<input id="setVerdana" type="submit" value="OK">
+			
 		</form>
 	</div>
 

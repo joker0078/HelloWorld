@@ -3,15 +3,16 @@
 	pageEncoding="ISO-8859-1"%>
 <style>
 .container {
-	width: 250px;
-	border-style: solid;
-	border-width: 5px;
+	width: 300px;
+	border: 5px solid green;
+  	border-radius: 5px;
 	display: block;
 	padding: 10px;
-	border-color: MediumSeaGreen;
 	background-color: white;
-	margin: 0 auto;
+	margin-left: auto;
+  	margin-right: auto;
 }
+
 </style>
 <!DOCTYPE html>
 <html>
@@ -23,7 +24,7 @@
 
 	<jsp:include page="include/header.jsp" />
 	<hr class ="new5">
-	<h1 class="MediumSeaGreen" style="padding: 12px">Profile</h1>
+	<h1 class="MediumSeaGreen">Profile</h1>
 	<% UserModel user =(UserModel)session.getAttribute("user"); %>
 	<form id="setSize" class="container">
 		<center>

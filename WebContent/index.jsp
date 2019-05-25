@@ -13,19 +13,14 @@
   		background-color: #4d4d4d;
   		padding: 20px;
 	}
-	nav ul {
-  		list-style-type: none;
-  		padding: 0;
-	}
 	article {
   		float: left;
   		padding: 20px;
  		width: 75%;
   		background-color: #8c8c8c;
-  		height: 300px; /* only for demonstration, should be removed */
+  		height: 300px;  /* only for demonstration, should be removed */
 	}
 	section:after {
-  		content: "";
   		display: table;
   		clear: both;
 	}
@@ -33,6 +28,7 @@
 		font-family: verdana;
 		color: white;
 	}
+
 </style>
 <html>
 <head>
@@ -42,10 +38,10 @@
 <body>
 	<jsp:include page="include/header.jsp"/>
 	<hr class ="new5">
-	<h1 class="MediumSeaGreen" style = "padding: 12px">Home</h1>
-	<p>You can support me by register SAGAME 66 1000 baht :</p>
+	<h1 class="MediumSeaGreen">Home</h1>
+	<p style = "padding: 0px 30px;">You can support me by register SAGAME 66 1000 baht :</p>
 	<center>
-		<iframe src="https://cdn.sagame66.com/video.mp4" height="480"
+		<iframe src="https://cdn.sagame66.com/video.mp4" height="360"
 			width="640" ></iframe>
 	</center>
 	<br>
@@ -54,11 +50,8 @@
 	<section>
 		<nav>
 			<p>- BACARAT</p>
-			<br>
 			<p>- POK POK</p>
-			<br>
 			<p>- BLACKJACK</p>
-			<br>
 		</nav>
 		<article>
 			<h1>The beginning of the word "Casino"</h1>
@@ -74,6 +67,5 @@
 				real place</p>
 		</article>
 	</section>
-	
 </body>
 </html>

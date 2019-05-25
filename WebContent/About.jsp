@@ -8,11 +8,35 @@
 <title>About Us</title>
 </head>
 <body>
+	<style>
+		table{
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 20px;
+  			border: 5px solid green;
+  			border-radius: 5px;
+		}
+		td {
+ 			background-color: #66ff66;
+ 			font-family: verdana;
+  			color: black;
+  			padding: 14px;
+  			text-align: center;
+		} 
+		th {
+	 		background-color: #00cc00;
+	 		font-family: verdana;
+  			color: black;
+  			padding: 14px;
+  			text-align: center;
+		} 
+	</style>
 	<jsp:include page="include/header.jsp"/>
 	<hr class ="new5">
-	<h1 class = "MediumSeaGreen" style = "padding: 12px">About Us</h1>
+	<h1 class = "MediumSeaGreen">About Us</h1>
 	
-	<table style="width: 100%" border = "2">
+	<table>
 		<tr>
 			<th colspan = "5">Firstname,Lastname,Age,Birthday,Phone Number</th>
 		</tr>
