@@ -51,6 +51,7 @@
 		border: none;
 		border-radius: 4px;
 		cursor: pointer;
+		box-shadow: 5px 5px #888888;
 	}
 
 	input[type=submit]:hover {
@@ -70,6 +71,7 @@
 		border: none;
 		border-radius: 4px;
 		cursor: pointer;
+		box-shadow: 5px 5px #888888;
 	}
 
 	input[type=reset]:hover {
