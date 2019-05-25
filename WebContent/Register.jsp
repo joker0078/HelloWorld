@@ -77,7 +77,7 @@ div.container {
 </head>
 <body>
 	<jsp:include page="include/header.jsp" />
-	<hr>
+	<hr class ="new5">
 	<h1 class="MediumSeaGreen" style="padding: 12px">Register</h1>
 
 	<div class="container">

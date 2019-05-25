@@ -22,7 +22,7 @@
 <body>
 
 	<jsp:include page="include/header.jsp" />
-	<hr>
+	<hr class ="new5">
 	<h1 class="MediumSeaGreen" style="padding: 12px">Profile</h1>
 	<% UserModel user =(UserModel)session.getAttribute("user"); %>
 	<form id="setSize" class="container">

@@ -9,7 +9,7 @@
 </head>
 <body>
 	<jsp:include page="include/header.jsp"/>
-	<hr>
+	<hr class ="new5">
 	<h1 class = "MediumSeaGreen" style = "padding: 12px">About Us</h1>
 	
 	<table style="width: 100%" border = "2">

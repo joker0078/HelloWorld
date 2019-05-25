@@ -14,6 +14,7 @@
   		overflow: hidden;
   		background-color: Tomato;
   		padding: 10px 10px;
+  		border-radius: 5px;
 	}
 	
 	.header a {
@@ -42,6 +43,7 @@
 	.MediumSeaGreen {
 		font-family: verdana;
 		background-color: MediumSeaGreen;
+		border-radius: 5px;
 	}
 	td {
  		background-color: lightblue;
@@ -63,12 +65,16 @@
 	#setVerdana{
 		font-family: verdana;
 	}
+	hr.new5 {
+  		border: 5px solid white;
+  		border-radius: 5px;
+	}
 </style>
 <center>
 	<img src="/HelloWorld/images/casino2.jpg"
 		alt="My idol" width=1330 height=300>
 </center>
-<hr>
+<hr class ="new5">
 <% 
 if(session.getAttribute("user") != null){
 %>

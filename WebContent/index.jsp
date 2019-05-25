@@ -41,7 +41,7 @@
 </head>
 <body>
 	<jsp:include page="include/header.jsp"/>
-	<hr>
+	<hr class ="new5">
 	<h1 class="MediumSeaGreen" style = "padding: 12px">Home</h1>
 	<p>You can support me by register SAGAME 66 1000 baht :</p>
 	<center>
