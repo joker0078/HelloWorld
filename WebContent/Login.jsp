@@ -12,14 +12,13 @@
 		border-style: solid;
 		border-width: 5px;
 		display: block;
-		padding: 20px;
+		padding:20px;
 		border-color: MediumSeaGreen;
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 20px;
 	}
-	
 	input[type=text], select {
 		width: 100%;
 		padding: 12px 20px;
@@ -87,7 +86,7 @@
 
 	<jsp:include page="include/header.jsp" />
 	<hr class="new5">
-	<h1 class="MediumSeaGreen">Login</h1>
+	<h1 class="MediumSeaGreen" style = "margin-left:20px;">Login</h1>
 	<hr class ="new5">
 	<script type="text/javascript">
 		function checkLogin() {
@@ -107,22 +106,23 @@
 			return true;
 		}
 	</script>
+	<div class="setbg">
 	<div class="setForm">
 		<form onsubmit="return checkLogin()"action="${pageContext.request.contextPath}/Login1" method="post">
 			<center>
 				<img src="/HelloWorld/images/login.png" width="150" height="150">
 			</center>
-			<label for="fname" style="font-family: verdana;">Username</label> 
+			<label for="fname" style="font-family: verdana; margin-bottom: 0px;">Username</label> 
 			<input type="text" id="id" name="usern" placeholder="Your Username. . ."> 
 			
-			<label for="lname" style="font-family: verdana;">Password</label> 
+			<label for="lname" style="font-family: verdana; margin-bottom: 0px;">Password</label> 
 			<input type="password" id="pass" name="passw" placeholder="Your Password. . ."> 
 			
-			<input id="setVerdana" type="reset"value="Reset"> 
-			<input id="setVerdana" type="submit"value="OK">
+			<input style="font-family: verdana;" type="reset" value="Reset"> 
+			<input style="font-family: verdana;" type="submit" value="OK">
 		</form>
 	</div>
-
+	</div>
 </body>
-</html>
+
 </html>

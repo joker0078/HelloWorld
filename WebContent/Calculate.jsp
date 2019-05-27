@@ -63,7 +63,7 @@
 </style>
 	<jsp:include page="include/header.jsp"/>
 	<hr class ="new5">
-	<h1 class="MediumSeaGreen">Calculate</h1>
+	<h1 class="MediumSeaGreen" style = "margin-left:20px;">Calculate</h1>
 	<hr class ="new5">
 	<script type="text/javascript">
 		function cal(input) {		

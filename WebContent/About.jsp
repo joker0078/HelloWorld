@@ -35,7 +35,7 @@
 	</style>
 	<jsp:include page="include/header.jsp"/>
 	<hr class ="new5">
-	<h1 class = "MediumSeaGreen">About Us</h1>
+	<h1 class = "MediumSeaGreen" style = "margin-left:20px;">About Us</h1>
 	<hr class ="new5">
 	<table>
 		<tr>

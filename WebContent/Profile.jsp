@@ -4,15 +4,17 @@
 <style>
 .setForm {
 	width: 300px;
+	height: 320px;
 	border: 5px solid green;
   	border-radius: 5px;
 	display: block;
-	padding: 10px;
+	padding: 20px;
 	background-color: white;
+	margin-top: 20px;
 	margin-left: auto;
   	margin-right: auto;
+  	margin-bottom: 20px;
 }
-
 </style>
 <!DOCTYPE html>
 <html>
@@ -24,10 +26,11 @@
 
 	<jsp:include page="include/header.jsp" />
 	<hr class ="new5">
-	<h1 class="MediumSeaGreen">Profile</h1>
+	<h1 class="MediumSeaGreen" style = "margin-left:20px;">Profile</h1>
 	<hr class ="new5">
 	<% UserModel user =(UserModel)session.getAttribute("user"); %>
-	<form id="setSize" class="setForm">
+	<div class = "setForm">
+	<form style = "font-family: verdana;">
 		<center>
 			<img src="/HelloWorld/images/login.png" width="150" height="150">
 		</center>
@@ -35,8 +38,7 @@
 		<br> Firstname : <% out.print(user.getName()); %>
 		<br> Lastname : <% out.print(user.getLastname()); %>
 		<br> Email : <% out.print(user.getEmail()); %> 
-		<br>
 	</form>
-
+	</div>
 </body>
 </html>

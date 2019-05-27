@@ -19,11 +19,10 @@
 	margin-bottom: 20px;
 	padding: 20px;
 }
-
 input[type=text], select {
 	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
+	padding: 8px 15px;
+	margin: 5px 0;
 	display: block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -32,8 +31,8 @@ input[type=text], select {
 
 input[type=password], select {
 	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
+	padding: 8px 15px;
+	margin: 5px 0;
 	display: block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -44,8 +43,8 @@ input[type=submit] {
 	width: 100%;
 	background-color: #4CAF50;
 	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
+	padding: 10px 20px;
+	margin: 5px 0;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
@@ -59,8 +58,8 @@ input[type=reset] {
 	width: 100%;
 	background-color: red;
 	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
+	padding: 10px 20px;
+	margin: 5px 0;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
@@ -89,7 +88,7 @@ input[type=reset]:hover {
 <body style = "background-color:#595959;">
 	<jsp:include page="include/header.jsp" />
 	<hr class ="new5">
-	<h1 class="MediumSeaGreen">Register</h1>
+	<h1 class="MediumSeaGreen" style = "margin-left:20px;">Register</h1>
 	<hr class ="new5">
 	<script type="text/javascript">
 		function checkinput() {
@@ -141,35 +140,36 @@ input[type=reset]:hover {
 			return true;
 		}
 	</script>
+	<div class="setbg">
 	<div class="setForm">
 		<form onsubmit="return checkinput()" action="${pageContext.request.contextPath}/Register1"
 			method="post">
-			<label for="fname" style="font-family: verdana;">Firstname</label> 
+			<label for="fname" style="font-family: verdana; margin-bottom: 0px;">Firstname</label> 
 			<input type="text" id="name1" name="name" placeholder="Your Firstname. . .">
 
-			<label for="lname" style="font-family: verdana;">Lastname</label> 
+			<label for="lname" style="font-family: verdana; margin-bottom: 0px;">Lastname</label> 
 			<input type="text" id="lastname" name="lastname" placeholder="Your Lastname. . .">
 
-			<label for="ename" style="font-family: verdana;">Email</label> 
+			<label for="ename" style="font-family: verdana; margin-bottom: 0px;">Email</label> 
 			<input type="text" id="email" name="email" placeholder="Your Email. . ."> 
 			
-			<label for="uname" style="font-family: verdana;">Username</label> 
+			<label for="uname" style="font-family: verdana; margin-bottom: 0px;">Username</label> 
 			<input type="text" id="username" name="username" placeholder="Your Username. . ."> 
 			
-			<label for="pname" style="font-family: verdana;">Password</label> 
+			<label for="pname" style="font-family: verdana; margin-bottom: 0px;">Password</label> 
 			<input type="password" id="password" name="password" placeholder="Your Password. . ."> 
 			
-			<label for="pname" style="font-family: verdana;">Confirm Password</label> 
+			<label for="pname" style="font-family: verdana; margin-bottom: 0px;">Confirm Password</label> 
 			<input type="password" id="Cpassword" name="Cpassword" placeholder="Confirm Password. . ."> 
 			
 			<p class = "setP" id = "errerms" style = "display:none">asdasd</p>
 			
-			<input id="setVerdana" type="reset" value="Reset"> 
-			<input id="setVerdana" type="submit" value="OK">
+			<input style="font-family: verdana;" type="reset" value="Reset"> 
+			<input style="font-family: verdana;" type="submit" value="OK">
 			
 		</form>
 	</div>
-
+	</div>
 
 </body>
 </html>
