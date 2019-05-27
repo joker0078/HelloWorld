@@ -6,9 +6,9 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body style = "background-color:#595959;">
 <style>
-	.container {
+	.setForm {
 		width: 200px;
 		border-style: solid;
 		border-width: 5px;
@@ -64,6 +64,7 @@
 	<jsp:include page="include/header.jsp"/>
 	<hr class ="new5">
 	<h1 class="MediumSeaGreen">Calculate</h1>
+	<hr class ="new5">
 	<script type="text/javascript">
 		function cal(input) {		
 			var var1 = parseInt(document.getElementById('num1').value);
@@ -86,7 +87,7 @@
 			}
 		}
 	</script>
-	<div class="container">
+	<div class="setForm">
 		<form>
 			<input type="number" id="num1" name="num1"> 
 			<input type="number" id="num2" name="num2"> 

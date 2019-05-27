@@ -5,20 +5,21 @@
 <html>
 <head>
 <style>
-	.container {
-		width: 300px;
+	.setForm {
+		width:300px;
+		background-color: white;
+		border-radius: 5px;
 		border-style: solid;
 		border-width: 5px;
 		display: block;
-		padding: 10px;
+		padding: 20px;
 		border-color: MediumSeaGreen;
-		background-color: white;
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 20px;
 	}
-
+	
 	input[type=text], select {
 		width: 100%;
 		padding: 12px 20px;
@@ -78,19 +79,16 @@
 		background-color: #ff3333;
 	}
 
-	div.container {
-		border-radius: 5px;
-		background-color: #f2f2f2;
-	}
 </style>
 <meta charset="ISO-8859-1">
 <title>Login</title>
 </head>
-<body>
+<body style = "background-color:#595959;">
 
 	<jsp:include page="include/header.jsp" />
 	<hr class="new5">
 	<h1 class="MediumSeaGreen">Login</h1>
+	<hr class ="new5">
 	<script type="text/javascript">
 		function checkLogin() {
 			var id = document.getElementById("id");
@@ -109,8 +107,7 @@
 			return true;
 		}
 	</script>
-	<div class="alert alert-success" role="alert"></div>
-	<div class="container">
+	<div class="setForm">
 		<form onsubmit="return checkLogin()"action="${pageContext.request.contextPath}/Login1" method="post">
 			<center>
 				<img src="/HelloWorld/images/login.png" width="150" height="150">

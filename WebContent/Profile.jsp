@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <style>
-.container {
+.setForm {
 	width: 300px;
 	border: 5px solid green;
   	border-radius: 5px;
@@ -20,13 +20,14 @@
 <meta charset="ISO-8859-1">
 <title>Profile</title>
 </head>
-<body>
+<body style = "background-color:#595959;">
 
 	<jsp:include page="include/header.jsp" />
 	<hr class ="new5">
 	<h1 class="MediumSeaGreen">Profile</h1>
+	<hr class ="new5">
 	<% UserModel user =(UserModel)session.getAttribute("user"); %>
-	<form id="setSize" class="container">
+	<form id="setSize" class="setForm">
 		<center>
 			<img src="/HelloWorld/images/login.png" width="150" height="150">
 		</center>

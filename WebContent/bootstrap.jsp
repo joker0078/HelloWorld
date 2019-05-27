@@ -1,86 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<style>
-	img {
- 	 	border-radius: 5px;
- 	 	max-width: 100%;
-  		height: auto;
-	}
-	* {box-sizing: border-box;}
-	.header {
-  		overflow: hidden;
-  		background-image: linear-gradient(90deg, green, orange,yellow);
-  		border-radius: 5px;
-	}
-	
-	.header a {
-  		float: left;
-  		color: black;
-  		text-align: center;
-  		padding: 12px;
-  		text-decoration: none;
-  		font-size: 18px; 
-  		line-height: 25px;
-  		border-radius: 4px;
-  		font-family: verdana;
-	}
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
 
-	.header a.logo {
- 		font-size: 25px;
-  		font-weight: bold;
-  		text-shadow: 0 0 10px #00cc00,0 0 10px #00cc00;
-	}
-	.header a:hover {
-  		background-color: #ff3300;
-  		color: black;
-	}
-	.header-right {
-  		float: right;
-	}
-	.MediumSeaGreen {
-		width:250px;
-		background-image: linear-gradient(90deg, yellow, orange, green);
-		border-style: solid;
-		border-width: 5px;
-		border-radius: 5px;
-		border-color: MediumSeaGreen;
-		text-align:center;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		margin-top: 3px;
-		margin-bottom: 3px;
-		text-shadow: 0 0 10px #00cc00,0 0 10px #00cc00;
-	}
-	#setSize{
-		font-family: verdana;
-	}
-	#setVerdana{
-		font-family: verdana;
-	}
-	hr.new5 {
-		margin-top: 5px;
-		margin-bottom: 5px;
-  		border: 3px solid white;
-  		border-radius: 5px;
-	}
-	.setCon {
-  		position: relative;
-	}
-	.text-block {
- 		position: absolute;
-  		top: 50px;
-  		left: 40px;
-  		background-color: black;
-  		color: white;
-  		padding-left: 15px;
-  		padding-right: 15px;
-  		border: 3px solid #33cc33;
-  		border-radius: 5px;
-	}
-</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
 <link rel="stylesheet" href = "bootstrap-4.3.1-dist/css/bootstrap.css">
 <script type = "text/javascript" src = "js/jquery-3.4.1.min.js"></script>
 <script type = "text/javascript" src = "bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+</head>
+<body style = "background-color:#595959;">
+
 <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
   <!-- Brand -->
   <a class="navbar-brand" href="#">SAGAME66.COM</a>
@@ -137,12 +68,24 @@
 	}
 	%>
 </nav>
-<div class="setCon" style="margin-top:56px;">
-  <img src="${pageContext.request.contextPath}/images/casino2.jpg">
-  <div class="text-block"> 
-    <h1>SAGAME66.COM</h1>
-    <p>What is BET?</p>
-  </div>
-</div>
 
-
+	<div class="container">
+		<div class="row" style="margin-top:80px;">
+			
+				<div class= "col-sm-8" style="background-color:yellow">
+					test
+					testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+					testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+					
+				</div>
+				<div class= "col-sm-3" style="background-color:red">
+					test
+				</div>
+				<div class= "col-sm-4" style="background-color:green">
+					test
+				</div>
+			
+		</div>
+	</div>
+</body>
+</html>

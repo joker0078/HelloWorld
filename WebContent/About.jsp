@@ -7,10 +7,11 @@
 <meta charset="ISO-8859-1">
 <title>About Us</title>
 </head>
-<body>
+<body style = "background-color:#595959;">
 	<style>
 		table{
 			margin-top: 20px;
+			background-color: black;
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 20px;
@@ -35,7 +36,7 @@
 	<jsp:include page="include/header.jsp"/>
 	<hr class ="new5">
 	<h1 class = "MediumSeaGreen">About Us</h1>
-	
+	<hr class ="new5">
 	<table>
 		<tr>
 			<th colspan = "5">Firstname,Lastname,Age,Birthday,Phone Number</th>

@@ -6,17 +6,11 @@
 	* {
  		box-sizing: border-box;
 	}
-	nav {
-  		float: left;
-  		width: 25%;
-  		height: 300px; /* only for demonstration, should be removed */
-  		background-color: #4d4d4d;
-  		padding: 20px;
-	}
+	
 	article {
   		float: left;
-  		padding: 20px;
- 		width: 75%;
+  		padding: 50px;
+ 		width: 100%;
   		background-color: #8c8c8c;
   		height: 300px;  /* only for demonstration, should be removed */
 	}
@@ -35,11 +29,12 @@
 <meta charset="ISO-8859-1">
 <title >Welcome to MyWebSite Jokkie</title>
 </head>
-<body>
+<body style = "background-color:#595959;">
 	<jsp:include page="include/header.jsp"/>
 	<hr class ="new5">
 	<h1 class="MediumSeaGreen">Home</h1>
-	<p style = "padding: 0px 30px;">You can support me by register SAGAME 66 1000 baht :</p>
+	<hr class ="new5">
+	<p style = "padding: 20px 20px;">You can support me by register SAGAME 66 1000 baht :</p>
 	<center>
 		<iframe src="https://cdn.sagame66.com/video.mp4" height="360"
 			width="640" ></iframe>
@@ -48,11 +43,6 @@
 	<br>
 	<br>
 	<section>
-		<nav>
-			<p>- BACARAT</p>
-			<p>- POK POK</p>
-			<p>- BLACKJACK</p>
-		</nav>
 		<article>
 			<h1>The beginning of the word "Casino"</h1>
 			<p>Online casino The ultimate source of new betting channels for

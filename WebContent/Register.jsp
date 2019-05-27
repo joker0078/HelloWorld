@@ -5,17 +5,19 @@
 <head>
 
 <style>
-.container {
+.setForm {
 	width: 400px;
+	background-color: white;
 	border-style: solid;
 	border-width: 5px;
+	border-radius: 5px;
 	display: block;
-	padding: 10px;
 	border-color: MediumSeaGreen;
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
+	padding: 20px;
 }
 
 input[type=text], select {
@@ -67,12 +69,6 @@ input[type=reset] {
 input[type=reset]:hover {
 	background-color: #ff3333;
 }
-
-div.container {
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 20px;
-}
 .setP{
 	color: red;
 	text-align: center;
@@ -90,10 +86,11 @@ div.container {
 <meta charset="ISO-8859-1">
 <title>Register</title>
 </head>
-<body>
+<body style = "background-color:#595959;">
 	<jsp:include page="include/header.jsp" />
 	<hr class ="new5">
 	<h1 class="MediumSeaGreen">Register</h1>
+	<hr class ="new5">
 	<script type="text/javascript">
 		function checkinput() {
 			
@@ -144,7 +141,7 @@ div.container {
 			return true;
 		}
 	</script>
-	<div class="container">
+	<div class="setForm">
 		<form onsubmit="return checkinput()" action="${pageContext.request.contextPath}/Register1"
 			method="post">
 			<label for="fname" style="font-family: verdana;">Firstname</label> 
