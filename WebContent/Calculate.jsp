@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Calculate</title>
 </head>
 <body style = "background-color:#595959;">
 <style>

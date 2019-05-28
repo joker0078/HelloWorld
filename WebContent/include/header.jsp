@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <style>
 	img {
  	 	border-radius: 5px;
@@ -122,6 +122,9 @@
       		<li class="nav-item">
         		<a class="nav-link" href="bootstrap.jsp">Bootstrap</a>
       		</li>
+      		<li class="nav-item">
+       			<a class="nav-link" href="Form.jsp">Form</a>
+      		</li>
       		<div class="dropdown">
       			<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
      		 		<i class="fa fa-bars"></i> Link
@@ -157,6 +160,9 @@
       		</li> 
       		<li class="nav-item">
        			<a class="nav-link" href="bootstrap.jsp">Bootstrap</a>
+      		</li>
+      		<li class="nav-item">
+       			<a class="nav-link" href="Form.jsp">Form</a>
       		</li>
       		<div class="dropdown">
       			<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
