@@ -3,10 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Bootstrap</title>
-</head>
-<body style = "background-color:#595959;">
 <style>
 	.setForm {
 		width:300px;
@@ -81,6 +77,11 @@
 		background-color: #ff3333;
 	}
 </style>
+<meta charset="UTF-8">
+<title>Bootstrap</title>
+</head>
+<body style = "background-color:#595959;">
+
 <jsp:include page="include/header.jsp" />
 <hr class="new5">
 <h1 class="MediumSeaGreen" style = "margin-left:20px;">Bootstrap</h1>

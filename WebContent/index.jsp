@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title >Welcome to MyWebSite Jokkie</title>
+<title>Welcome to MyWebSite Jokkie</title>
 </head>
 <style>
 	* {
@@ -26,6 +26,14 @@
 		font-family: verdana;	
 		color: white;
 	}
+	.setPositionCen{
+		width:640px;
+		height:360px;
+		margin-top:20px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:20px;
+	}
 </style>
 <body style = "background-color:#595959;">
 	<jsp:include page="include/header.jsp"/>
@@ -33,10 +41,9 @@
 	<h1 class="MediumSeaGreen" style = "margin-left:20px;">Home</h1>
 	<hr class ="new5">
 	<p style = "padding: 20px 20px;" class = "setFontWhite">You can support me by register SAGAME 66 1000 baht :</p>
-	<center>
-		<iframe src="https://cdn.sagame66.com/video.mp4" height="360"
-			width="640" ></iframe>
-	</center>
+	<div class="setPositionCen">
+		<iframe src="https://cdn.sagame66.com/video.mp4" width = "640px" height = "360px"></iframe>
+	</div>
 	<br><br>
 	<div>
 		<section>

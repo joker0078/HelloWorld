@@ -81,12 +81,6 @@
   		border: 3px solid #33cc33;
   		border-radius: 5px;
 	}
-	li a:hover{
-		background-color:#004d00;
-		border: 1px solid #000000;
-  		border-radius: 5px;
-  		padding:5px 3px;
-	}
 </style>
 <link rel="stylesheet" href = "bootstrap-4.3.1-dist/css/bootstrap.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
